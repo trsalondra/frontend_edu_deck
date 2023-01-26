@@ -10,18 +10,16 @@ export default function CardDetails({ card }) {
     }
 
     const handleEdit = () => {
-       { nav(`/${card.deckTitle}/${card._id}`) }
+        { nav(`/${card.deckTitle}/${card._id}`) }
     }
 
     return (
         <Card style={{ height: "7rem", margin: "12px", cursor: "pointer" }}>
-            <Card.Body style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
-                <Stack direction="horizontal">
-                    <Card.Title className="me-auto" text="light" >{card.front}</Card.Title>
-                    <Card.Title className="me-auto" text="light" >{card.back}</Card.Title>
-                    <span className="material-symbols-outlined google-icons" onClick={handleDelete}>Delete</span>
-                    <span className="material-symbols-outlined google-icons" onClick={handleEdit}>edit</span>
-                </Stack>
+            <Card.Body style={{ display: "flex", justifyContent: "center" , alignItems: "center" }}>
+                <Card.Title style={{ flex: "1" }} text="light" >{card.front}</Card.Title>
+                <Card.Title style={{ flex: "1" }} text="light" >{card.back}</Card.Title>
+                <span className="material-symbols-outlined google-icons" onClick={handleDelete}>Delete</span>
+                <span className="material-symbols-outlined google-icons" onClick={handleEdit}>edit</span>
             </Card.Body>
         </Card>
     )
