@@ -1,12 +1,12 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
-
-import Container from "react-bootstrap/Container";
+import { createDeck } from "../services/deck_api"
+import Container from "react-bootstrap/Container"
 import Button from "react-bootstrap/Button"
 import Form from "react-bootstrap/Form"
-import Stack from "react-bootstrap/Stack";
-import FloatingLabel from "react-bootstrap/FloatingLabel";
-import { createDeck } from "../services/deck_api";
+import Stack from "react-bootstrap/Stack"
+import FloatingLabel from "react-bootstrap/FloatingLabel"
+
 
 export default function DeckForm() {
     const nav = useNavigate()

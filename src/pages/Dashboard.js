@@ -14,7 +14,7 @@ export default function Dashboard() {
         getDecks() 
         .then(res => setDecks(res.data))
     }, [])
-    console.log(decks)
+
 
     return (
             <Container>
