@@ -15,7 +15,6 @@ export default function CreateCardForm({ deckTitle }) {
     const [back, setBack] = useState("")
 
     const handleSubmit = async (e) => {
-        e.preventDefault()
 
         const card = { deckTitle, front, back }
 
