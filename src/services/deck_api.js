@@ -1,5 +1,5 @@
 import axios from 'axios'
-const baseURL = 'http://localhost:4000/api/decks'
+const baseURL = 'https://edu-deck-api.onrender.com/api/decks'
 
 // CREATE
 export const createDeck = (deck) => {

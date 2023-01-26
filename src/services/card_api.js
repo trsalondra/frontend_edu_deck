@@ -1,6 +1,6 @@
 // All of our endpoints
 import axios from "axios"
-const baseURL = "http://localhost:4000/api/cards"
+const baseURL = "https://edu-deck-api.onrender.com/api/cards"
 
 
 // CREATE CARD
